@@ -1,0 +1,502 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+h1{
+    font-family: 'Cinzel', serif;
+}
+p {
+    font-size: 1rem;
+    line-height: 2.4;
+    font-weight: 350;
+    color: black;
+    font-family: 'Cinzel', serif;  
+}
+span{
+    font-weight: bold;
+    font-family: 'Cinzel', serif;  
+}
+.extra-div h2, .servicediv h2{
+    color: #ff0000;
+    font-size: 1.2rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px; 
+    font-family: 'Cinzel', serif;   
+}
+
+i{
+    color: #000000;
+}
+
+/* -------------- Actual css classes starts------------- */
+/* ----------- header section starts ------------ */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.7)), url('images/a.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+
+.header::before {
+    /*psudo element */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.7));
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.7));
+}
+
+.nav-item a {
+    color: #fff !important;
+    /* here imp is used bcoz it will take by default color so imp is mentioned*/
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+    /* for center */
+}
+.header-section p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*css3 property*/
+    -ms-transform: translate(-50%, -50%);
+    /*css3 property* for ms i.e microsoft*/
+    -webkit-transform: translate(-50%, -50%);
+    /*css3 property for mozila webscrap */
+    font-family: 'Cinzel', serif;
+}
+
+.header-buttons a {
+    border: 2px solid #2e2a2ae8;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    color: #ff0000;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.314);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    /*T L B R */
+    color: black;
+}
+/* -------extra-div starts----------- */
+.result .extra-div {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div {
+    font-family: 'Cinzel', serif;
+    background: white;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.578);
+    transform: translateY(-20px);
+}
+
+
+/* ----------offer starts------- */
+.serviceoffers{
+    background: lightgray;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings{
+    margin-bottom: 50px;
+}
+.headings h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.names h1{
+    color: 2e2e2e;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+    background:#b85151;
+}
+
+/* ----------offer ends------- */
+/* ----------Awards starts------- */
+
+.project-work{
+    margin: 100px 0;
+}
+
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+}
+/* ----------Awards ends------- */
+
+/* ---------------Our Courses Starts------------- */
+
+.Courses{
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.Courses::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    /* opacity: 0.3%; */
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0);
+}
+.money{
+    font-size: 35px;
+    line-height: 1;
+    color: #606060;
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #fff!important;
+    padding: 25px 9!important;
+}
+.card-body{
+    padding: 30px 0px!important;
+}
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: white!important;
+    padding: 30px 0px!important;
+}
+.card-footer a {
+    border: 2px solid #2e2a2ae8;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(22, 151, 244);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card:hover .card-footer a{
+    color: #ff0000;
+    background-color: #ffc800;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.314);
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header,
+.card:hover .money{
+    color: #ffc800;
+}
+.card-second{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/* --------------Our Courses end ------------- */
+
+/* ---------------Feedback Starts ------------- */
+.Happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+.box:hover{
+    background: #16c9f6;
+}
+
+.box:hover p{
+    color: white;
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+.box a{
+    position: relative;
+}
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.box a:after{
+    content: "\f10d";   /* icon display */
+    font-family: FontAwesome;   /* must mentioned because we want to display icon */
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #0c4c95 0%, #49decd 0%, #16c9f6 100% );
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* ---------------Feedback end ------------- */
+
+/* ---------------Contact us Starts-------------*/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;  /*to shaw how the background looks like */
+}
+.contactus:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+.form-button button{
+    border: 2px solid #50d1c0;;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+.form-button button:hover{
+    color: red;
+    background: white;
+}
+.form:hover .form-button button{
+    color: red;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0..3);  /* horizontal vertical blur spread color*/
+}
+
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/* ---------------Contact us end-------------*/
+/* ---------------News Letter Starts-------------*/
+.newsletter{
+    width: 100%;
+    height:auto;
+    margin: 80px auto;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px!important ;  /*top left top right bottom right bottom left*/
+    min-width: 150px;
+    min-width: 45px
+}
+
+.input-group-text{
+    color: white!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;   /* top left top right bottom right bottom left */
+    min-width: 130px;
+    min-height: 40px;
+}
+
+/* ---------------News Letter End-------------*/
+
+
+/*-------------footer starts -------------*/
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #000000d8;
+    position: relative;
+}
+
+.footersection p{
+    color: white!important; 
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footersection h3{
+    font-weight: 600;
+    font-size: 1.3rem!important;
+    margin-bottom: 25px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#myBtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #ff8800;
+}
+
+/*---------------footer end ------------- */
+
+/* ************ MEDIA QUERIES **************** */
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center!important;
+        background-color: #168af6c2;
+        transition: 1s ease-in;
+    }
+    .Courses, .Happyclients{
+        height: auto;
+        margin-top: 50px;
+    }
+
+
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    
+}
